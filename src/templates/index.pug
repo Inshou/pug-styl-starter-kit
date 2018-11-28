@@ -1,0 +1,13 @@
+extends layout/base
+
+append vars
+    - var title = 'Сервис Flight Radar 24'
+append head
+    link(rel="stylesheet" href="css/index.min.css?v="+ Date.now())
+block header
+block content
+
+block footer
+block hidden
+append assets
+    script(src="js/index.bundle.js?v="+ Date.now())

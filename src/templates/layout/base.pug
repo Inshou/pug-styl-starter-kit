@@ -1,0 +1,22 @@
+block vars
+    -
+        var title = title || "Page title"
+        var description = description || ""
+        var keywords = keywords || ""
+        var bodyClass = bodyClass || ""
+doctype html
+html(lang="ru")
+    head
+        title #{title}
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="description" content=description)
+        meta(name="keywords" content=keywords)
+        block head
+    body(class=bodyClass)
+        block header
+        block content
+        block footer
+        block hidden
+        block assets

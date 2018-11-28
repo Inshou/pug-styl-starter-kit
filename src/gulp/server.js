@@ -17,7 +17,7 @@ function server() {
       notify: false
     }
   });
-  gulp.watch(paths.root+'/assets/**/*.*', reload);
+  gulp.watch(paths.root+'/**/*.*', reload);
   gulp.watch(paths.root+'/*.html', reload);
 }
 

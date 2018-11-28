@@ -3,16 +3,16 @@ const dist = '';
 const paths = {
 	root: './dist',
 	templates: {
-		src: ['./src/templates/**/*.pug', '!./src/templates/partials/**/*.pug'],
+		src: ['./src/templates/*.pug'],
 		dest: './dist/'
 	},
 	styles: {
-		src: ['./src/styles/**/*.styl', '!./src/styles/partials/**/*.styl'],
-		dest: './dist/assets/css/'
+		src: ['./src/styles/*.styl'],
+		dest: './dist/css/'
 	},
 	scripts: {
-		src: './src/javascript/**/*.*',
-		dest: './dist/assets/js/'
+		src: './src/js/**/*.*',
+		dest: './dist/js/'
 	}
 };
 
